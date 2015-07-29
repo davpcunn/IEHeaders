@@ -1,4 +1,5 @@
 require "ie_headers/version"
+require 'ie_headers/railtie' if defined? Rails
 
 module IEHeaders
 

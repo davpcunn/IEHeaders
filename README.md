@@ -22,7 +22,7 @@ Or install it yourself as:
 
 IEHeaders can be added to your application in the way you would add any other piece of rack middleware to the middleware stack for your application.
 
-In a Rails app, no setup necessary, the middleware will automatically be added to the middleware stack
+In a Rails app, no setup is necessary. It will automatically add iteself to the middleware stack
 
 In any other rake application you must add it to your Rack::Builder block in config.ru via the 'use' command like the following:
 

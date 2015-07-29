@@ -1,6 +1,6 @@
 # IEHeaders
 
-Rack middleware that adds a response header that keeps Internet Explorer from running in compatability mode
+Rack middleware that adds a HTTP response header so that Internet Explorer will not attempt to load your app in compatability mode
 
 ## Installation
 

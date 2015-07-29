@@ -23,16 +23,18 @@ Or install it yourself as:
 IEHeaders can be added to your application in the way you would add any other piece of rack middleware to the middleware stack for your application.
 
 In a Rails app, add the following to the Rails::Initializer.run block in your enviorment.rb file
-
-  $ Rails::Initializer.run do |config|
-  $   config.middleware.use IEHeaders::IEHeaders
-  $ end
-
+'''ruby
+Rails::Initializer.run do |config|
+  config.middleware.use IEHeaders::IEHeaders
+end
+'''
 In any other rake application you must add it to your Rack::Builder block in config.ru via the 'use' command like the following:
 
-$ @app = Rack::Buildeer do
-$   use IEHeaders::IEHeaders
-$ end
+'''ruby
+@app = Rack::Buildeer do
+  use IEHeaders::IEHeaders
+end
+'''
 
 ## Development
 

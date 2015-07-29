@@ -27,7 +27,7 @@ In a Rails app, no setup necessary, the middleware will automatically be added t
 In any other rake application you must add it to your Rack::Builder block in config.ru via the 'use' command like the following:
 
 ```ruby
-@app = Rack::Buildeer do
+@app = Rack::Builder do
   use IEHeaders::IEHeaders
 end
 ```
